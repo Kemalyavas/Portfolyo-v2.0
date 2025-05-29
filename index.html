@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Kemal Yavaş - Full Stack Developer</title>
+    <meta name="description" content="Ali Kemal Yavaş - Yazılım Mühendisliği öğrencisi ve Full Stack Developer. Modern web uygulamaları ve sistemler geliştiriyorum.">
+    <meta name="keywords" content="Ali Kemal Yavaş, Full Stack Developer, Yazılım Mühendisliği, Web Development, Django, React">
+    
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</head>
+<body>
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="code-animation">
+                <span class="code-line">const developer = {</span>
+                <span class="code-line">  name: 'Ali Kemal Yavaş',</span>
+                <span class="code-line">  role: 'Full Stack Developer',</span>
+                <span class="code-line">  passion: 'Creating Digital Experiences'</span>
+                <span class="code-line">};</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="global-background">
+        <div class="hero-grid"></div>
+        <div class="hero-particles"></div>
+        </div>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" class="logo-link">
+                    <span class="logo-text">AKY</span>
+                    <span class="logo-dot">.</span>
+                </a>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" data-section="home">
+                        <span class="nav-text">Ana Sayfa</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-section="about">
+                        <span class="nav-text">Hakkımda</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-section="skills">
+                        <span class="nav-text">Yetenekler</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-section="projects">
+                        <span class="nav-text">Projeler</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link" data-section="experience">
+                        <span class="nav-text">Deneyim</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-section="contact">
+                        <span class="nav-text">İletişim</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-extras">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Tema Değiştir">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Menü">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-up" data-aos-delay="200">
+                    <div class="hero-greeting">
+                        <span class="greeting-icon">👋</span>
+                        <span class="greeting-text">Merhaba, ben</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="title-name">Ali Kemal Yavaş</span>
+                        <span class="title-role" id="typing-text"></span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Yazılım Mühendisliği öğrencisiyim ve <strong>Full Stack Development</strong> alanında uzmanlaşıyorum. 
+                        Modern teknolojiler kullanarak <em>ölçeklenebilir web uygulamaları</em> ve <em>kullanıcı dostu arayüzler</em> geliştiriyorum.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="15">0</span>
+                            <span class="stat-label">Proje</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="3">0</span>
+                            <span class="stat-label">Yıl Deneyim</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="50">0</span>
+                            <span class="stat-label">Teknoloji</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span class="btn-text">Projelerimi Görüntüle</span>
+                            <i class="btn-icon fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span class="btn-text">İletişime Geç</span>
+                            <i class="btn-icon fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-social">
+                        <span class="social-label">Takip Et</span>
+                        <div class="social-links">
+                            <a href="https://github.com/kemalyavas" target="_blank" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/alikemalyavas1/" target="_blank" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://bionluk.com/kemalyavas" target="_blank" class="social-link" aria-label="Bionluk">
+                                <i class="fas fa-briefcase"></i>
+                            </a>
+                            <a href="mailto:kemalyavaas@outlook.com" class="social-link" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual" data-aos="fade-left" data-aos-delay="400">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-controls">
+                                <span class="control close"></span>
+                                <span class="control minimize"></span>
+                                <span class="control maximize"></span>
+                            </div>
+                            <div class="window-title">ali-kemal-yavas.js</div>
+                        </div>
+                        <div class="window-content">
+                            <div class="code-lines" id="code-animation">
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-elements">
+                        <div class="floating-element" data-tech="React">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="floating-element" data-tech="Django">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="floating-element" data-tech="JavaScript">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="floating-element" data-tech="Node.js">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="floating-element" data-tech="Database">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="floating-element" data-tech="Cloud">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll</div>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Beni Tanıyın</span>
+                <h2 class="section-title">Hakkımda</h2>
+                <p class="section-subtitle">
+                    Tutkulu bir geliştiricinin hikayesi ve vizyonu
+                </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <div class="about-intro">
+                        <p>
+                            Merhaba! Ben <strong>Ali Kemal Yavaş</strong>, Kocaeli Üniversitesi Yazılım Mühendisliği 
+                            bölümünde 3. sınıf öğrencisiyim. Web geliştirme dünyasına adım attığım günden beri, 
+                            <em>kod yazmanın bir sanat olduğuna</em> inanıyorum.
+                        </p>
+                    </div>
+                    
+                    <div class="about-details">
+                        <p>
+                            Her proje benim için yeni bir maceradır. <strong>Frontend</strong>'ten <strong>Backend</strong>'e, 
+                            <strong>UI/UX tasarımından</strong> <strong>veritabanı optimizasyonuna</strong> kadar teknolojinin 
+                            her alanında kendimi geliştirmeye odaklanıyorum.
+                        </p>
+                        
+                        <p>
+                            Özellikle <strong>Django</strong> ve <strong>React</strong> teknolojileri ile çalışmayı seviyorum. 
+                            Yapay zeka araçlarını etkin kullanarak kod kalitesini artırıyor ve geliştirme süreçlerini optimize ediyorum.
+                        </p>
+                    </div>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <div class="highlight-content">
+                                <h4>Clean Code</h4>
+                                <p>Temiz, okunabilir ve sürdürülebilir kod yazma prensipleri</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <i class="fas fa-rocket"></i>
+                            <div class="highlight-content">
+                                <h4>Performance</h4>
+                                <p>Yüksek performanslı ve optimize edilmiş web uygulamaları</p>
+                            </div>
+                        </div>
+                        
+                        <div class="highlight-item">
+                            <i class="fas fa-users"></i>
+                            <div class="highlight-content">
+                                <h4>User Experience</h4>
+                                <p>Kullanıcı odaklı tasarım ve geliştirme yaklaşımı</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-cta">
+                        <a href="assets/cv.pdf" target="_blank" class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            <span>CV İndir</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                        <div class="image-decoration"></div>
+                    </div>
+                    
+                    <div class="about-cards">
+                        <div class="info-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-icon">
+                                <i class="fas fa-birthday-cake"></i>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-label">Yaş</span>
+                                <span class="card-value">21</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-label">Lokasyon</span>
+                                <span class="card-value">Kocaeli, TR</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-label">Eğitim</span>
+                                <span class="card-value">Yazılım Müh.</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card-icon">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-label">Kahve</span>
+                                <span class="card-value">∞ Fincan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Uzmanlık Alanları</span>
+                <h2 class="section-title">Yetenekler & Teknolojiler</h2>
+                <p class="section-subtitle">
+                    Modern web geliştirme teknolojilerinde uzmanlaştığım alanlar
+                </p>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="category-title">Frontend Development</h3>
+                        <p class="category-description">Kullanıcı arayüzü ve deneyimi odaklı geliştirme</p>
+                    </div>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5</span>
+                                <span class="skill-level">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS3 / SASS</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React.js</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="category-title">Backend Development</h3>
+                        <p class="category-description">Server-side geliştirme ve API tasarımı</p>
+                    </div>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Django</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PostgreSQL</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">REST API</span>
+                                <span class="skill-level">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="category-title">Tools & Technologies</h3>
+                        <p class="category-description">Geliştirme araçları ve teknolojileri</p>
+                    </div>
+                    
+                    <div class="tech-icons">
+                        <div class="tech-item" data-tooltip="Git & GitHub">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <div class="tech-item" data-tooltip="Docker">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <div class="tech-item" data-tooltip="VS Code">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="tech-item" data-tooltip="Figma">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <div class="tech-item" data-tooltip="Linux">
+                            <i class="fab fa-linux"></i>
+                        </div>
+                        <div class="tech-item" data-tooltip="AWS">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Öne Çıkan Projeler</h2>
+                <p class="section-subtitle">
+                    Geliştirdiğim modern web uygulamaları ve sistemler
+                </p>
+            </div>
+            
+            <div class="projects-filter" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">Tümü</button>
+                <button class="filter-btn" data-filter="web">Web App</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-category="fullstack" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Kemalyavas/Lost-Found" target="_blank" class="project-link" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-category">Full Stack</div>
+                        <h3 class="project-title">Kayıp Eşya Takip Sistemi</h3>
+                        <p class="project-description">
+                            Django ile geliştirilmiş kapsamlı kayıp eşya yönetim sistemi. 
+                            CRUD işlemleri, kullanıcı yetkilendirme, mesajlaşma sistemi ve CSV import/export özellikleri.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Fast Loading</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-users"></i>
+                                <span>3 Kullanıcı Tipi</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-comments"></i>
+                                <span>Mesajlaşma Sistemi</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-file-csv"></i>
+                                <span>CSV Import/Export</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="frontend" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/kemalyavas/law" target="_blank" class="project-link" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://kemalyavas.github.io/law/" target="_blank" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-category">Frontend</div>
+                        <h3 class="project-title">Avukatlık Ofisi Web Sitesi</h3>
+                        <p class="project-description">
+                            Modern ve profesyonel avukatlık ofisi için tasarlanmış responsive web sitesi. 
+                            Elegant tasarım ve smooth animasyonlar ile kullanıcı deneyimi odaklı geliştirildi.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Animations</span>
+                        </div>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Responsive Design</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-paint-brush"></i>
+                                <span>Clean Design</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-user-tie"></i>
+                                <span>Professional Layout</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="frontend" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/kemalyavas/landing_page" target="_blank" class="project-link" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://kemalyavas.github.io/landing_page/" target="_blank" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-category">Frontend</div>
+                        <h3 class="project-title">Modern Landing Page</h3>
+                        <p class="project-description">
+                            Modern tasarım trendleri ve interactive elementler kullanılarak oluşturulmuş 
+                            etkileyici landing page. Conversion odaklı tasarım prensipleri uygulandı.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Responsive Design</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-magic"></i>
+                                <span>Smooth Animations</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-star"></i>
+                                <span>High Conversion</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="fullstack" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-status">Geliştiriliyor</div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-category">Full Stack</div>
+                        <h3 class="project-title">E-Ticaret Platformu</h3>
+                        <p class="project-description">
+                            Django REST Framework ve React.js kullanılarak geliştirilen modern e-ticaret platformu. 
+                            Ödeme sistemi, stok yönetimi ve admin paneli ile komple çözüm.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">Django REST</span>
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Redux</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-credit-card"></i>
+                                <span>Payment Integration</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-boxes"></i>
+                                <span>Inventory Management</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Analytics Dashboard</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="frontend" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/kemalyavas/Portfolyo" target="_blank" class="project-link" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://kemalyavas.github.io/Portfolyo/" target="_blank" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-category">Frontend</div>
+                        <h3 class="project-title">Kişisel Portfolio Sitesi</h3>
+                        <p class="project-description">
+                            Modern web teknolojileri kullanılarak oluşturulmuş kişisel portfolio sitesi. 
+                            Interaktif animasyonlar ve responsive tasarım ile profesyonel görünüm.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">AOS</span>
+                        </div>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>Clean Code</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-palette"></i>
+                                <span>Modern Design</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-rocket"></i>
+                                <span>Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-status">Planlanan</div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-category">Web App</div>
+                        <h3 class="project-title">AI Code Assistant</h3>
+                        <p class="project-description">
+                            Yapay zeka destekli kod yardımcısı web uygulaması. 
+                            Code review, bug detection ve optimization önerileri sunan intelligent platform.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">OpenAI API</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-brain"></i>
+                                <span>AI Powered</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-bug"></i>
+                                <span>Bug Detection</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-optimize"></i>
+                                <span>Code Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-cta" data-aos="fade-up" data-aos-delay="700">
+                <div class="cta-content">
+                    <h3>Daha fazla proje görüntülemek ister misiniz?</h3>
+                    <p>GitHub profilimde daha birçok açık kaynak proje bulabilirsiniz.</p>
+                    <a href="https://github.com/kemalyavas" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub'da Görüntüle</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Kariyer Yolculuğu</span>
+                <h2 class="section-title">Deneyim & Eğitim</h2>
+                <p class="section-subtitle">
+                    Profesyonel gelişim hikayem ve akademik geçmişim
+                </p>
+            </div>
+            
+            <div class="experience-content">
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                        <div class="timeline-marker">
+                            <div class="timeline-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Freelance Web Developer</h3>
+                                <span class="timeline-company">Bionluk Platform</span>
+                                <span class="timeline-date">2024 - Devam Ediyor</span>
+                            </div>
+                            <div class="timeline-description">
+                                <p>
+                                    Modern web teknolojilerini öğrenerek müşteriler için web sitesi geliştirme konusunda 
+                                    kendimi geliştiriyorum. HTML, CSS, JavaScript ve modern framework'ler kullanarak responsive 
+                                    ve kullanıcı dostu web çözümleri tasarlıyorum.
+                                </p>
+                                <ul class="timeline-achievements">
+                                    <li>Modern web teknolojileri öğrenme</li>
+                                    <li>Responsive tasarım geliştirme</li>
+                                    <li>Kullanıcı dostu arayüz tasarımı</li>
+                                    <li>Clean code yazma prensipleri</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-skills">
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Responsive Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+                        <div class="timeline-marker">
+                            <div class="timeline-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Yazılım Mühendisliği</h3>
+                                <span class="timeline-company">Kocaeli Üniversitesi</span>
+                                <span class="timeline-date">2022 - 2027</span>
+                            </div>
+                            <div class="timeline-description">
+                                <p>
+                                    Yazılım geliştirme prensipleri, veri yapıları, algoritma analizi, 
+                                    web programlama ve modern yazılım mühendisliği uygulamalarını öğreniyorum.
+                                </p>
+                                <ul class="timeline-achievements">
+                                    
+                                    <li>Web programlama dalında uzmanlaşma</li>
+                                    <li>Takım projelerinde liderlik deneyimi</li>
+                                    <li>Açık kaynak projelere katkı</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-skills">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">Data Structures</span>
+                                <span class="skill-tag">Algorithms</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+                        <div class="timeline-marker">
+                            <div class="timeline-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Self-Taught Developer</h3>
+                                <span class="timeline-company">Kişisel Gelişim</span>
+                                <span class="timeline-date">2023 - Devam Ediyor</span>
+                            </div>
+                            <div class="timeline-description">
+                                <p>
+                                    Modern web teknolojilerini öğrenerek pratik projeler geliştiriyorum. 
+                                    Online kurslar, dokümantasyonlar ve açık kaynak projeler ile 
+                                    kendimi sürekli geliştiriyorum.
+                                </p>
+                                <ul class="timeline-achievements">
+                                    <li>Django framework uzmanlığı</li>
+                                    <li>React.js ile frontend geliştirme</li>
+                                    <li>RESTful API tasarımı ve geliştirme</li>
+                                    <li>Modern DevOps araçları kullanımı</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-skills">
+                                <span class="skill-tag">Django</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">REST API</span>
+                                <span class="skill-tag">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
+                        <div class="timeline-marker">
+                            <div class="timeline-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Kişisel Proje Geliştirme</h3>
+                                <span class="timeline-company">GitHub Portfolio</span>
+                                <span class="timeline-date">2023 - Devam Ediyor</span>
+                            </div>
+                            <div class="timeline-description">
+                                <p>
+                                    Öğrendiğim teknolojileri pratik projeler geliştirerek pekiştiriyorum. 
+                                    Her proje ile farklı teknolojileri deneyimleme ve problem çözme yeteneklerimi geliştirme fırsatı buluyorum.
+                                </p>
+                                <ul class="timeline-achievements">
+                                    <li>Kayıp eşya takip sistemi (Django)</li>
+                                    <li>Modern landing page tasarımları</li>
+                                    <li>Avukatlık ofisi web sitesi</li>
+                                    <li>Kişisel portfolio gelişimi</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-skills">
+                                <span class="skill-tag">GitHub</span>
+                                <span class="skill-tag">Problem Solving</span>
+                                <span class="skill-tag">Project Management</span>
+                                <span class="skill-tag">Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">İletişime Geçin</span>
+                <h2 class="section-title">Birlikte Çalışalım</h2>
+                <p class="section-subtitle">
+                    Yeni bir proje mi var? Hadi birlikte harika şeyler yapalım!
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                    <div class="contact-intro">
+                        <h3>Hadi konuşalım!</h3>
+                        <p>
+                            Yeni projeler, iş birlikleri veya sadece merhaba demek için 
+                            benimle iletişime geçmekten çekinmeyin. Her zaman yeni 
+                            fırsatlar ve zorluklar arıyorum.
+                        </p>
+                    </div>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Email</h4>
+                                <p>kemalyavaas@outlook.com</p>
+                                <a href="mailto:kemalyavaas@outlook.com" class="method-link">
+                                    Email Gönder <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Telefon</h4>
+                                <p>+90 554 969 00 11</p>
+                                <a href="tel:+905549690011" class="method-link">
+                                    Ara <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Lokasyon</h4>
+                                <p>Kocaeli, Türkiye</p>
+                                <span class="method-link">
+                                    GMT+3 Saat Dilimi
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h4>Sosyal Medya</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/kemalyavas" target="_blank" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/alikemalyavas1/" target="_blank" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://bionluk.com/kemalyavas" target="_blank" class="social-link" aria-label="Bionluk">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Bionluk</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container" data-aos="fade-left" data-aos-delay="200">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-header">
+                            <h3>Mesaj Gönder</h3>
+                            <p>Aşağıdaki formu doldurarak benimle iletişime geçebilirsiniz.</p>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Adınız *</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="form-error" id="name-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-posta *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="form-error" id="email-error"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Konu *</label>
+                            <input type="text" id="subject" name="subject" required>
+                            <span class="form-error" id="subject-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mesajınız *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Projeniz hakkında detayları paylaşın..."></textarea>
+                            <span class="form-error" id="message-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">
+                                    Kişisel verilerimin işlenmesini ve sizinle iletişim kurulmasını kabul ediyorum.
+                                </span>
+                            </label>
+                            <span class="form-error" id="privacy-error"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Mesaj Gönder</span>
+                            <span class="btn-loading">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                Gönderiliyor...
+                            </span>
+                            <i class="btn-icon fas fa-paper-plane"></i>
+                        </button>
+                        
+                        <div class="form-success" id="form-success">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağım.</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <span class="logo-text">AKY</span>
+                            <span class="logo-dot">.</span>
+                        </div>
+                        <p class="footer-description">
+                            Yazılım Mühendisliği öğrencisi ve Full Stack Developer. 
+                            Modern web teknolojileri ile harika projeler geliştiriyorum.
+                        </p>
+                        <div class="footer-social">
+                            <a href="https://github.com/kemalyavas" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/alikemalyavas1/" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://bionluk.com/kemalyavas" target="_blank" aria-label="Bionluk">
+                                <i class="fas fa-briefcase"></i>
+                            </a>
+                            <a href="mailto:kemalyavaas@outlook.com" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="footer-section">
+                            <h4>Hızlı Linkler</h4>
+                            <ul>
+                                <li><a href="#about">Hakkımda</a></li>
+                                <li><a href="#skills">Yetenekler</a></li>
+                                <li><a href="#projects">Projeler</a></li>
+                                <li><a href="#contact">İletişim</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-section">
+                            <h4>Hizmetler</h4>
+                            <ul>
+                                <li><a href="#contact">Web Development</a></li>
+                                <li><a href="#contact">Frontend Development</a></li>
+                                <li><a href="#contact">Backend Development</a></li>
+                                <li><a href="#contact">Full Stack Solutions</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-section">
+                            <h4>İletişim</h4>
+                            <ul>
+                                <li><i class="fas fa-envelope"></i> kemalyavaas@outlook.com</li>
+                                <li><i class="fas fa-phone"></i> +90 554 969 00 11</li>
+                                <li><i class="fas fa-map-marker-alt"></i> Kocaeli, Türkiye</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p>&copy; 2025 Ali Kemal Yavaş. Tüm hakları saklıdır.</p>
+                    </div>
+                    <div class="footer-credits">
+                        <p>❤️ ile kodlandı | <span id="current-year"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Yukarı Çık">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
